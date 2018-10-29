@@ -1,6 +1,4 @@
-/*@import "flexbox.css";*/
 @import "flex.css";
-/*@import "bootstrap.css";*/
 
 .index {
     max-width: 1000px;
@@ -11,17 +9,21 @@
 }
 
 
-/**/
+/*
 .borderhelp {
     border: 1px solid black;
-}
+}*/
 
 /*Section menu*/
 
 .logo {
     height: 130px;
     width: 130px;
+    background-image: url(../logo/n6bHyzVh8qY2.jpg);
+    background-repeat: no-repeat;
 }
+
+
 
 ul {
     list-style: none;
@@ -339,11 +341,12 @@ article h1 {
 }
 .bottom > p > a {
     display: inline-block;
-}
-.bottom a {
     font-size: 11px;
 }
-.bottom > p > p {
+.bottom a {
+    font-size: 13px;
+}
+.bottom > p > span {
     font-size: 9px;
     display: inline-block;
 }
@@ -394,8 +397,20 @@ article h1 {
     }
 
     .logo {
-        height: 30px;
-        width: 30px;
+       /* background-image: url(../logo/n6bHyzVh8qY3.jpg);
+        background-size: 90px;
+        background-repeat: no-repeat;
+        margin-bottom: 0;*/
+        display: none;
+    }
+
+    .header-nav {
+        flex-direction: row;
+        width:100%;
+        justify-content: space-between;
+        height: auto;
+        padding: 0;
+        margin-bottom: 20px;
     }
 
     .navigation {
@@ -429,8 +444,7 @@ article h1 {
     }
 
     .logo {
-        height: 10px;
-        width: 10px;
+        margin-left: 10%;
     }
 
     .nav {
@@ -502,7 +516,7 @@ article h1 {
 
     }
 
-    .section-slider > p {
+    .sectionSlider > p {
         right: 10px;
         bottom: 10px;
 
@@ -524,15 +538,17 @@ article h1 {
     }
 
     .logo {
+        display: block;
         margin: 1rem auto;
     }
 
-    .silder-link {
+
+    .slLink {
         display: none;
     }
 
-    .section-slider > img {
-        height: 238px;
+    .sectionSlider > img {
+        height: 240px;
         width: 450px;
         overflow: hidden;
     }
